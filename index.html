@@ -5,37 +5,43 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,inital-scale=1.0,shrink-to-fit=no"/>
     <link rel="stylesheet" href="../css/screen.css" />
+    <link rel="stylesheet" href="//basehold.it/16/ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:400,500" rel="stylesheet">
     <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
   </head>
-  <body class="fade-in">
+  <body>
     <header id="header">
-      <h1 class="body-title">Mailing List Registration</h1>
-
+      <h1 class="body-title">Happy Birthday Email</h1>
     </header>
     <main id="content">
+      <article id="secondary">
+
+      </article>
     <article id="primary">
+      <img class="center-image" src="Lies.jpg" alt="this is a neat logo"/>
       <form action="#null" method="get" id="contactForm">
     <ol>
       <li>
-        <label for="Email">E-mail Address:</label>
-        <input placeholder="JohnDoe@example.com" type="email" id="Email" name="Address"/>
+        <label id="EmailLabel" for="Email">E-mail Address:</label>
+        <input placeholder="JohnDoe@example.com" type="email" id="Email" name="Address" required/>
       </li>
       <li>
-        <label for="Name">Name (optional):</label>
-        <input type="tel" id="Name" name="name"/>
+        <label id="NameLabel" for="NameInput">Name (optional):</label>
+        <input type="text" id="NameInput" name="name" required/>
       </li>
       <li>
-        <label for="DoB">Date of Birth:</label>
+        <label id="DoBLabel" for="DoB">Date of Birth:</label>
         <input type="Date" id="DoB" name="dateOfBirth" required/>
       </li>
       <li>
-        <input type="submit" value="Submit"/>
+        <input id="SubmitButton" type="submit" value="Submit"/>
       </li>
     </ol>
   </form>
     </article>
-    <aside>
-      This Online Registration page is here so you can register to be on my MAILING LIST!!!  now you can get all the interesting messages about web typography
+    <aside class="body-title">
+      Register for my mailing list and you will get a message back from me thanking you for signing up for such a pointless distraction.
     </aside>
     </main>
       <footer id="footer">
