@@ -43,18 +43,18 @@ input {
     width: 100%;
     border: 0;
     line-height: 1em;
-    padding: 0em;
+    height:2em;
+
 }
 input {
     background-color: White;
     user-select: text;
     cursor: auto;
-    padding: 1em;
 }
 input, textarea, select, button {
     text-indent: 0em;
     display: inline-block;
-    margin: 0.444em;
+
 }
 /*Classes*/
 .body-title {
