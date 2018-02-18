@@ -46,25 +46,15 @@ input {
     padding: 0em;
 }
 input {
-    -webkit-appearance: textfield;
     background-color: White;
-    -webkit-rtl-ordering: logical;
     user-select: text;
     cursor: auto;
     padding: 1em;
 }
 input, textarea, select, button {
-/*    text-rendering: auto;*/
     text-indent: 0em;
-    text-shadow: none;
     display: inline-block;
-    /*text-align: start;*/
     margin: 0.444em;
-    padding-left:1em;
-    padding-right:1em;
-}
-input, textarea, select, button, meter, progress {
-    -webkit-writing-mode: horizontal-tb;
 }
 /*Classes*/
 .body-title {
@@ -73,6 +63,7 @@ input, textarea, select, button, meter, progress {
 .center-image {
   margin-left: auto;
   margin-right: auto;
+  display:block;
 }
 @media screen and (min-width: 45em) {
   /*
