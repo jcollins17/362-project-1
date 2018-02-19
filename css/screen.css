@@ -195,7 +195,6 @@ html {
 body {
   padding: 1rem;
   background-color: #252525;
-
 }
 h1 {
   font-size: 2em;
@@ -210,7 +209,7 @@ h1 {
 }*/
 li {
   text-align: center;
-  padding-top: .5em;
+  padding-top: 0.5em;
   /*alignment check*/
   /*background-color: blue;*/
 }
@@ -250,18 +249,18 @@ input, textarea, select, button {
   margin-right: auto;
   display: block;
 }
-.submit-button{
+.submit-button {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-@media screen and (max-width: 34.375em) {
+@media screen and (max-width: 64em) {
   .twocolumn {
     display: none;
   }
 }
-@media screen and (min-width: 34.375em) {
+@media screen and (min-width: 64em) {
   /*
-    720px grid with two 80px margins
+    1024px grid with two 80px margins
   */
   body {
     padding-right: 11.111%; /*80/720=11.111%*/
