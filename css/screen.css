@@ -189,7 +189,7 @@ the linter will complain about unexpected double quotes.*/
 html {
   font-size: 1em;
   line-height: 1.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #CABD7D;
 }
 body {
@@ -201,28 +201,36 @@ h1 {
   line-height: 1.5em;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 0.5em;
-  /*alignment check*/
-  background-color: red;
 }
 h2{
   font-size: 1.5em;
   line-height: 2em;
   font-family: "Montserrat", sans-serif;
-  background-color:orange;
 }
-/*alignment check*/
+p {
+  line-height: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+/*Debug stylesheet*/
+
+h1 {
+  background-color: red;
+}
+h2 {
+  background-color: purple;
+}
 p {
   background-color: green;
 }
+li{
+  background-color: blue;
+}
+
+/*end of debug stylesheet*/
 li {
   text-align: center;
   padding-top: 0.5em;
-  /*alignment check*/
-  background-color: blue;
-}
-img {
-  display: inline-block;
-  max-width: 100%;
 }
 form {
   box-sizing: content-box;
@@ -240,6 +248,7 @@ input {
   background-color: white;
   user-select: text;
   cursor: auto;
+  font-family: "Roboto", sans-serif;
 }
 input, textarea, select, button {
   display: inline-block;
@@ -263,13 +272,6 @@ input, textarea, select, button {
 
 /*media queries*/
 
-
-@media screen and (min-width: 37.5em) {
-  body {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-}
 @media screen and (min-width: 40em) {
   /*
     640px grid with two 40px margins
@@ -279,9 +281,14 @@ input, textarea, select, button {
     padding-left: 6.25%; /*40/640=0.0625*/
   }
 }
+
 @media screen and (max-width: 63.938em) {
   .twocolumn {
     display: none;
+  }
+  img {
+    display: inline-block;
+    max-width: 60%;
   }
 }
 
@@ -289,6 +296,10 @@ input, textarea, select, button {
   /*
     1024px trigger
   */
+  img {
+    display: inline-block;
+    max-width: 100%;
+  }
   body {
     padding-right: 11.111%; /*80/720=11.111%*/
     padding-left: 11.111%; /*80/720=11.111%*/
@@ -296,7 +307,7 @@ input, textarea, select, button {
   .cssgrid #content {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: 11.111%;
+    grid-column-gap: 4em;
     width: auto;
     align-content: center;
   }
@@ -308,5 +319,8 @@ input, textarea, select, button {
   }
   .onecolumn {
     display: none;
+  }
+  figcaption {
+    line-height: 1em;
   }
 }
