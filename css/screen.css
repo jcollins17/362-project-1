@@ -202,7 +202,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 0.5em;
 }
-h2{
+h2 {
   font-size: 1.5em;
   line-height: 2em;
   font-family: "Montserrat", sans-serif;
@@ -214,7 +214,7 @@ p {
 }
 /*Debug stylesheet*/
 
-h1 {
+/* h1 {
   background-color: red;
 }
 h2 {
@@ -225,7 +225,7 @@ p {
 }
 li{
   background-color: blue;
-}
+} */
 
 /*end of debug stylesheet*/
 li {
@@ -291,7 +291,6 @@ input, textarea, select, button {
     max-width: 60%;
   }
 }
-
 @media screen and (min-width: 64em) {
   /*
     1024px trigger
