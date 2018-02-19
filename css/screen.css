@@ -202,17 +202,23 @@ h1 {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 0.5em;
   /*alignment check*/
-  /*background-color: red;*/
+  background-color: red;
+}
+h2{
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "Montserrat", sans-serif;
+  background-color:orange;
 }
 /*alignment check*/
-/*p {
+p {
   background-color: green;
-}*/
+}
 li {
   text-align: center;
   padding-top: 0.5em;
   /*alignment check*/
-  /*background-color: blue;*/
+  background-color: blue;
 }
 img {
   display: inline-block;
@@ -254,10 +260,23 @@ input, textarea, select, button {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+/*media queries*/
+
+
 @media screen and (min-width: 37.5em) {
-  body{
-    padding-right: 5%; /*80/720=11.111%*/
-    padding-left: 5%; /*80/720=11.111%*/
+  body {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /*
+    640px grid with two 40px margins
+  */
+  body {
+    padding-right: 6.25%; /*40/640=0.0625*/
+    padding-left: 6.25%; /*40/640=0.0625*/
   }
 }
 @media screen and (max-width: 63.938em) {
@@ -265,6 +284,7 @@ input, textarea, select, button {
     display: none;
   }
 }
+
 @media screen and (min-width: 64em) {
   /*
     1024px trigger
