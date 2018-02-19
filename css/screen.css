@@ -265,10 +265,10 @@ input, textarea, select, button {
   margin-right: auto;
   display: block;
 }
-.submit-button {
+/* .submit-button {
   padding-top: 1em;
   padding-bottom: 1em;
-}
+} */
 
 /*media queries*/
 
