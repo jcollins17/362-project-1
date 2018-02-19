@@ -193,13 +193,14 @@ html {
   color: #CABD7D;
 }
 body {
-  padding: 1rem;
+  padding: 1em;
   background-color: #252525;
 }
 h1 {
   font-size: 2em;
   line-height: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.5em;
   /*alignment check*/
   /*background-color: red;*/
 }
@@ -239,7 +240,7 @@ input, textarea, select, button {
 }
 /*Classes*/
 .text-field {
-  padding: 1em;
+  padding-left: 1em;
 }
 .body-title {
   text-align: center;
@@ -253,14 +254,20 @@ input, textarea, select, button {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-@media screen and (max-width: 64em) {
+@media screen and (min-width: 37.5em) {
+  body{
+    padding-right: 5%; /*80/720=11.111%*/
+    padding-left: 5%; /*80/720=11.111%*/
+  }
+}
+@media screen and (max-width: 63.938em) {
   .twocolumn {
     display: none;
   }
 }
 @media screen and (min-width: 64em) {
   /*
-    1024px grid with two 80px margins
+    1024px trigger
   */
   body {
     padding-right: 11.111%; /*80/720=11.111%*/
@@ -271,6 +278,7 @@ input, textarea, select, button {
     grid-template-columns: repeat(2, 2fr);
     grid-column-gap: 11.111%;
     width: auto;
+    align-content: center;
   }
   .cssgrid .column1 {
     grid-column: 1;
